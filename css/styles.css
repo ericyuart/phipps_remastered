@@ -1,0 +1,689 @@
+/* 	CSS Styling for the 67-250 Web Development Assignment */
+
+
+/* Enter CSS code in this file */
+
+body {
+	color: #333333;
+	font-family: "calibri";
+	font-size: 0.75em; /* 12px/16=0.875em */
+}
+
+body {
+ 
+  width: 80%;
+ 
+  max-width: 1200px;
+ 
+  margin: 0px auto;
+
+  min-width:600px; 
+
+  max-height: 1200px;
+
+  min-height:600px;
+
+  background-image: url("../images/background.png");
+
+ /* image background taken from https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash4/423551_10150506976648434_1606151604_n.jpg*/
+
+  background-size:80%;
+}
+
+#main .divide{
+
+	display:block;
+	margin-top: 69px;
+	color: rgba(176,219,74,0.7);
+}
+
+
+#contentGallery .galdivide{
+	margin-top: 7px;
+}
+
+#wrapper { 
+	 margin: 0 auto;
+	 width: 100%;
+	 min-height:100%;
+	 color: black;
+
+}
+
+ header {
+	width: 80%;
+	height: 160px;
+	border: 1px solid #cccccc;
+	margin: 20px 0px 0px 17%; /* top, right, bottom, left */
+	padding: 15px;
+	background-image: url("../images/banner2.png");
+	background-size: 100%;
+	position: relative;
+}
+
+header img {
+	float: left;
+	padding: 5px;
+}
+
+/*header h1 {
+	float: left;
+	font-size: 2em;
+	font-family: verdana; 
+	color: #FFFCFF;
+}
+*/
+h1, h2{
+	font-size: 2em;
+	font-family: verdana;
+	color: black;
+}
+
+
+
+h3, h4, h6{
+	font-size: 1.2em;
+	font-family: verdana;
+	color: black;
+}
+
+ h5{
+ 	float: center;
+ 	font-size: 1.5em;
+ 	font-family: verdana;
+ 	color: #7D9C32;
+ 	margin-top: -7px;
+ 	margin-bottom: 10px;
+ }
+
+
+
+th {
+	text-align: left;
+}
+
+td {
+	vertical-align: top; 
+	border-bottom: 1px solid black; 
+	padding-bottom: 2px;
+	padding-right: 30px;
+}
+
+
+/*navbar code adapted from http://www.sitepoint.com/building-an-interactive-navigation-bar/*/
+
+
+nav {
+ 
+  width: 100.3%;
+
+  float:left;
+
+ 
+  margin: 20px 0; }
+ 
+nav ul {
+ 
+	width: 100.3%;
+
+  	list-style: none;
+ 
+  	overflow: hidden; }
+ 
+nav ul li {
+ 
+  float:left;
+ 
+  width: 25%; }
+ 
+nav ul li a {
+ 
+  text-align: center;
+
+  font-family: verdana;
+ 
+  padding: 8px 0;
+
+  margin-left: -50px;
+ 
+  display: block;
+ 
+  width: 100%;
+ 
+  background: #cdeb8e; /* Old browsers */
+ 
+  background: -moz-linear-gradient(top, #cdeb8e 0%, #b0ca34 100%); /* FF3.6+ */
+ 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#b0ca34)); /* Chrome,Safari4+ */
+ 
+  background: -webkit-linear-gradient(top, #cdeb8e 0%,#b0ca34 100%); /* Chrome10+,Safari5.1+ */
+ 
+  background: -o-linear-gradient(top, #cdeb8e 0%,#b0ca34 100%); /* Opera 11.10+ */
+ 
+  background: linear-gradient(to bottom, #cdeb8e 0%,#b0ca34 100%); /* W3C, IE10+ */
+ 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+ 
+  endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+ 
+}
+ 
+nav ul li a,
+ 
+nav ul li a:focus,
+ 
+nav ul li a:visited,
+ 
+nav ul li a:hover,
+ 
+nav ul li a:active {
+ 
+  color: #000;
+ 
+  text-decoration: none; }
+ 
+nav ul li a:hover,
+ 
+nav ul li a:active {
+ 
+  background: #b0ca34; /* Old browsers */
+ 
+  background: -moz-linear-gradient(top, #b0ca34 0%, #96c40d 100%); /* FF3.6+ */
+ 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0ca34), color-stop(100%,#96c40d)); /* Chrome,Safari4+ */
+ 
+  background: -webkit-linear-gradient(top, #b0ca34 0%,#96c40d 100%); /* Chrome10+,Safari5.1+ */
+ 
+  background: -o-linear-gradient(top, #b0ca34 0%,#96c40d 100%); /* Opera 11.10+ */
+ 
+  background: linear-gradient(to bottom, #b0ca34 0%,#96c40d 100%); /* W3C, IE10+ */
+ 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ca34', endColorstr='#96c40d',GradientType=0 ); /* IE6-9 */
+ 
+}
+
+
+#main .stat_pic{
+	padding-top:50px;
+	width:23%;
+	height:150px;
+	margin-top:-27px;
+	margin-left:10px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+
+
+
+#box3{
+	width:75%;
+	height:150px;
+	float:right;
+	margin-top:23px;
+	background: rgba(176,219,74,0.7);
+}
+
+
+
+
+#box3 .statgraph{
+	margin-bottom: 2%;
+	margin-left: 3%;
+	margin-right: 2%;
+	font-family:"calibri";
+	font-size: 1.4em;
+}
+
+
+#rectangle{
+	width: 950px;
+	height: 20px;
+	background: #4EEA25;
+}
+
+#textbox{
+	width: 23%;
+	height: 650px;
+	float:left;
+	background: rgba(176,219,74,0.7);
+	margin-bottom: 30px;
+
+}
+
+#textbox2{
+	width: 50%;
+	height: 150px;
+	float:right;
+	margin-left:10px;
+	margin-top:20px;
+	background: rgba(176,219,74,0.7);
+
+}
+
+#textbox2 .description{
+	text-align:left;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-family:"calibri";
+	font-size: 1.2em;
+
+}
+
+#testimonial{
+	width: 50%;
+	height: 400px;
+	float:right;
+	margin-top: 20px;
+	margin-left:10px;
+	background: rgba(176,219,74,0.7);
+
+}
+
+#testimonial .heading{
+	text-align:left;
+	margin-left: 15px;
+	margin-right: 10px;
+
+}
+
+#testimonial .volunteer_pic{
+	width: 150px;
+	height: 135px;
+	margin-left: 30%;
+
+
+
+}
+
+#testimonial .under{
+	text-align:left;
+	margin-left:15px;
+	margin-right:10px;
+}
+
+
+#testimonial .description{
+	text-align:left;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-family:"calibri";
+	font-size: 1.2em;
+
+}
+
+.banner {
+    width: 75%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo2 {
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+	float:left;
+	width: 15%;
+	height: 180px;
+
+}
+
+.flowers{
+	display: block;
+	float:right;
+	width: 75%;
+	margin-top: 10%;
+	margin-right: 13%;
+	margin-left: 18%;
+	font-size: 2em;
+}
+
+.top{
+	height: 650px;
+	width: 75%;
+	margin-left: 25%;
+}
+
+.bottom{
+	height: 650px;
+	width: 75%;
+	margin-left: 25%;
+
+}
+
+
+/*code for hovering over an image to change it adapted from code on http://css3.bradshawenterprises.com/cfimg/*/
+
+
+#cf {
+  position:relative;
+  height:100px;
+  width:100%;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+
+#main { 
+	height: 650px; 
+	width: 70%;
+	float: left;
+	border: 1px solid #ccc;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+}
+
+#galleryThumbnail {
+	float: left;
+	margin-right: 20px;
+	margin-left: 35px;
+	padding: 3px;
+}
+
+
+
+iframe{
+	float: right;
+	margin-right: 10px;
+	width: 50%;
+	margin-top: -7%;
+}
+
+
+
+#box {
+	width: 25%; 
+	float: right; 
+	margin: 5px 5px 5px 5px; 
+	padding-bottom: 0px;
+
+}
+
+#container{
+
+	margin-top: -0px;
+}
+
+#firstp:first-line {
+	font-variant: small-caps
+}
+	
+#firstp:first-letter {
+	float: left; 
+	font-size: 400%; 
+	line-height: 0.8;
+}
+
+/* Set Box ID width, position background, margins, and list type */
+#square {
+	width: 250px; 
+	float: left; 
+	margin: 30px 0px 30px 0px; 
+	background-color: rgba(176,219,74,0.7); 
+}
+
+#main .video{
+	float:right;
+	margin: -220px 10px 30px 270px;
+}
+	/* http://www.w3.org/TR/REC-CSS2/box.html */
+
+/* A few CSS3 techniques with the border */
+/* New School:  http://border-radius.com/ */
+/* Old School:  http://www.w3schools.com/css/css_border.asp */
+#square {
+	box-shadow: #333 3px 3px 4px;
+	-moz-box-shadow: #333 3px 3px 4px;
+	-webkit-box-shadow: #333 3px 3px 4px;
+	border-radius: 13px; 
+	-moz-border-radius: 13px; 
+	-webkit-border-radius: 13px; 
+	border: 4px solid rgba(176,219,74,0.7);
+}
+
+#square h3 {
+	text-align: center;
+}
+
+#square ul {
+	list-style-type: circle;
+}
+
+#square li {
+	font-family: sans-serif; 
+	font-size: 1em; 
+	margin-right: 10px;
+}
+
+
+
+footer { 
+	width: 98%;
+	height: 30px;
+	clear: both; 	/* Clear removes floating elements http://www.w3schools.com/cssref/pr_class_clear.asp */
+	border: 1px solid #cccccc;
+	margin: 0px 0px 30px 0px;
+	padding: 10px;
+	background: rgba(176,219,74,0.7);
+	z-index:1;
+}
+
+footer img{
+	float:right;
+	padding: -90px
+}
+
+.icons {float: right; margin-top:5px;}
+.icons li { display:inline;}
+.icons span {margin-top: -20px;}
+
+.icon{
+	position: relative;
+	width:30px;
+	height: 30px;
+	float:right;
+
+	margin-top: 5px;
+	margin-right: 15px;
+	z-index: 2;
+	padding-bottom: 90px;
+	margin: -40px 10px 0px 0px;
+
+}
+
+#textbox .description{
+	font-family: "Calibri";
+	font-size: 1.5em;
+	margin-left: 16px;
+	margin-right: 13px;
+	text-align: left;
+}
+
+#textbox .title{
+	margin-left: 17px;
+	font-family:"Calibri";
+	float:left;
+}
+
+#main .stat{
+
+	float: left;
+	margin-left: 2%;
+}
+
+
+/*code for making the accordion adapted from http://css3.bradshawenterprises.com/accordions/*/
+
+
+#accordion section, #accordion .pointer, #accordion h1, #accordion p {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#accordion {
+  margin-bottom:20px;
+}
+#accordion h1 {
+  line-height:1.2;
+  font-size:13px;
+  background-color:rgba(176,219,74,0.7);
+  margin:0;
+  padding: 10px 10px 10px 30px;
+}
+
+#accordion h1 a {
+  color:black;
+}
+#accordion section {
+  overflow:hidden;
+  height:547px;
+  border:1px #333 solid;
+}
+#accordion p {
+  padding:0 10px;
+  color:black;
+  font-size:1.3em;
+}
+#accordion section.ac_hidden p:not(.pointer) {
+  color:#fff;
+}
+
+#accordion section.ac_hidden {
+  height:44px;
+}
+#accordion .pointer {
+  padding:0;
+  margin:10px 0 0 6px;
+  line-height:20px;
+  width:13px;
+  position:absolute;
+
+}
+
+#accordion .date{
+
+	font-weight: bold;
+}
+
+
+#accordion section:not(.ac_hidden) h1 {
+  background-color:rgba(198,43,145,0.7);
+}
+
+#accordion section:not(.ac_hidden) .pointer {
+  display:block;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+  padding:0;
+}
+
+#contentGallery{
+	float:left;
+	display:inline;
+}
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+

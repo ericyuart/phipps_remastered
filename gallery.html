@@ -1,0 +1,148 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+	<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Eric Yu">
+	<meta name="keywords" content="67-250 Web Development Assignment: Phipps Conservatory Gallery">
+	<meta name="description" content="Phipps Conservatory Website Gallery">
+
+	<!-- Link to CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<!-- The href=" " attribute is where you placed the style sheet. 
+	The rel="stylesheet" attribute just says to look for a stylesheet. 
+	The type="text/css" tells the browser the mime type of the document, which is a cascading style sheet. -->
+
+	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script> <!-- Full jQuery library -->
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script> 	<!-- Lightbox plugin from:  http://projects.exvoto.org/jquery-lightboxclone/website/ -->
+
+	<script type="text/javascript">
+		$(function() {
+		$('#gallery a').lightBox();
+		});
+	</script>
+
+	<script src="js/accordion.js"></script>
+
+	<title>Phipps Conservatory</title>
+</head>
+    
+<body>
+
+<div id="wrapper">
+
+	<a href="index.html"><img class = "logo2" src="images/logo2.jpg" alt="Phipps Logo" /></a>
+
+	<header>
+
+	</header>
+
+	<!-- The BODY is where the main content goes -->
+
+	<nav>
+  		<ul>
+    		<li>
+       			<a href="gallery.html">Gallery</a>
+    		</li>
+    		<li>
+      			<a href="contact.html">Contact Us!</a>
+    		</li>
+    		<li>
+      			<a href="volunteer.html">Volunteering</a>
+    		</li>
+    		<li>
+      			<a href="statistics.html">Visitor Statistics</a>
+    		</li>
+
+  		</ul>
+	</nav>
+	<div id="main">
+
+
+		
+		<div id="contentGallery">
+
+			<!-- images taken from the Phipps Website -->
+			
+			<h1 class = "galtitle">Gallery</h1>
+			<p class="gallerydesc">There are so many things to see at Phipps!  Click on the thumbnails below to see the full image and their respective descriptions!</p>
+			<br></br>
+			<hr class = "galdivide"><div id="gallery"></hr>
+			<br></br>
+				<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/fallflowershow.jpg" title="The flowers at Phipps are truly beautiful in any season.">
+					<img src="images/fallflowershowicon.png" alt="image 1"/></a></div></div>
+				<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/panda.jpg" title="You can make anything with just the right amount of creativity!">
+					<img src="images/pandaicon.jpg" alt="image 2"></a></div></div>
+				<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/pittsburgh-phipps-conservatory.jpg" title="Explore one of Phipps' many gardens!">
+					<img src= "images/phippsicon.jpg" alt="image 3"></a></div></div>
+				<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/corpseflower.jpg" title="Though beautiful, the smell of the corpse flower is nothing to scoff at.">
+					<img src="images/corpseflowericon1.jpg" alt="image 4"/></a></div></div>
+				<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/halloweenhappenings.jpg" title="Grab a pumpkin to celebrate the spooky season.">
+					<img src="images/halloweenhappeningsicon.jpg" alt="image 5"></a></div></div>
+				<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/fall.png" title="Autumn is in the air, with beautiful shades of orange and yellow!">
+					<img src="images/fall1icon.jpg" alt="image 6"></a></div></div>
+				
+			</div><!-- End gallery -->
+		</div>
+
+
+			
+	</div>
+
+	<div id="box">
+		<h5>Upcoming Exhibitions</h5>
+		<div id="accordion">
+  			<section id="item1">
+    			<p class="pointer">&#9654;</p><h1><a href="http://phipps.conservatory.org/exhibits-and-events/featured-event.aspx?eventid=60">Fall Flower Show and Garden Railroad</a></h1>
+    			<p class="date">October 18 - November 9, 2014</p>
+    			<p>In celebration of the harvest season and its changing hues, this colorful exhibit showcases beautiful crysanthemums, vibrant foliage and other festive flowers as tiny trains wind their way through many of the Conservatory's display rooms.</p>
+    			<img class = "flowers" src="images/fall14.jpg" alt="flowers" />
+  			</section>
+  			<section id="item2" class="ac_hidden">
+    			<p class="pointer">&#9654;</p><h1><a href="http://phipps.conservatory.org/exhibits-and-events/featured-event.aspx?eventid=1097">Wines Under Glass</a></h1>
+    			<p class="date">October 30, 2014</p>
+    			<p>Join masked revelers and friends for an unforgettable masquerade party as we raise a glass to toast another year of groundbreaking achievements. As our guest, you will enjoy the company of good friends, delectable food, captivating entertainment, and the beauty of our Fall Flower Show and Tropical Forest India exhibits. Be a part of the celebration!</p>
+    			<img class = "flowers" src="images/wine.jpg" alt="wine" />
+  			</section>
+  			<section id="item3" class="ac_hidden">
+    			<p class="pointer">&#9654;</p><h1><a href="http://www.engineering.pitt.edu/MCSI/conference/">Engineering Sustainability 2015 Conference</a></h1>
+    			<p class="date">April 19 - 21, 2015</p>
+    			<p>This conference, presented by Mascaro Center for Sustainable Innovation at the University of Pittsburgh and the Steinbrenner Institute for Environmental Education and Research at Carnegie Mellon University, will bring together members of academia, government, industry, and nonprofits to share sustainability research and practices</p>
+    			<img class = "flowers" src = "images/es15.jpg" alt="green" />
+  			</section>
+		</div>
+
+
+	</div>
+
+	<footer>
+		<p>Created by Eric Yu, 67-250 Information Systems Milieux, Carnegie Mellon University, October 2014</p>
+
+		<div class="icons">
+
+			<li><a href="https://www.facebook.com/phippsconservatory"><img class = "icon" src="images/facebook.png" alt="Facebook Logo" /></a></li>
+			<li><a href="https://twitter.com/PhippsNews"><img class = "icon" src="images/Twitter-icon.png" alt="Twitter Logo" /></a></li>
+			<li><a href="https://www.youtube.com/user/phippsconservatory"><img class = "icon" src="images/youtube.png" alt="Youtube Logo" /></a></li>
+			<li><a href="https://www.flickr.com/photos/phippsconservatory/"><img class = "icon" src="images/flickr.png" alt="Flickr Logo" /></a></li>
+			<li><a href="http://www.pinterest.com/phippsisgreen/"><img class = "icon" src="images/pinterest-icon.png" alt="Pinterest Logo" /></a></li>
+
+
+		</div>
+
+	</footer>
+
+</div>
+
+
+
+</body>
+
+</html>

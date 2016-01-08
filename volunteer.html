@@ -1,0 +1,171 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+	<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Eric Yu">
+	<meta name="keywords" content="67-250 Web Development Assignment: Phipps Conservatory Volunteering">
+	<meta name="description" content="Phipps Conservatory Website Volunteering">
+
+	<!-- Link to CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<!-- The href=" " attribute is where you placed the style sheet. 
+	The rel="stylesheet" attribute just says to look for a stylesheet. 
+	The type="text/css" tells the browser the mime type of the document, which is a cascading style sheet. -->
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/accordion.js"></script>
+
+
+	<title>Phipps Conservatory</title>
+</head>
+    
+<body>
+
+<div id="wrapper">
+
+	<a href="index.html"><img class = "logo2" src="images/logo2.jpg" alt="Phipps Logo" /></a>
+
+	<header>
+
+	</header>
+	<!-- The BODY is where the main content goes -->
+	
+
+	<nav>
+  		<ul>
+    		<li>
+       			<a href="gallery.html">Gallery</a>
+    		</li>
+    		<li>
+      			<a href="contact.html">Contact Us!</a>
+    		</li>
+    		<li>
+      			<a href="volunteer.html">Volunteering</a>
+    		</li>
+    		<li>
+      			<a href="statistics.html">Visitor Statistics</a>
+    		</li>
+
+  		</ul>
+	</nav>
+
+	<div id="main">
+
+
+		<div id="textbox2">
+				<p class="description">Phipps is known for its beautiful gardens, flower shows, and sustainability initiatives and programs.  However, none of these things would be possible without the help of our volunteers.  Interested in helping out?  There are a multitude of roles that you can take, from running our summer camp to introducing visitors to our sustainability initiatives!</p>
+
+			</div>
+
+			<div id="testimonial">
+
+				<!-- image of volunteer taken from the Phipps Website -->
+
+				<h1 class = "heading">Volunteer Testimonial</h1>
+				<img class = "volunteer_pic" src="images/volunteer.jpg" alt="volunteer_pic" />
+				<h3 class = "under">Joan Star - Pittsburgh, PA, Summer Camp Counselor</h3>
+				<p class="description">Being a summer camp counselor at Phipps was one of the most rewarding experiences of my life.  I worked with children of various ages from June to August, and helped them learn about nature, science, and healthy living.  Not only was I contributing to the community, but I learned so many new things as well!  My time at Phipps was definitely rewarding!</p>
+				
+			</div>
+
+
+		<h1>Become a Volunteer!</h1>
+
+		<!-- form code adapted from http://www.adobe.com/devnet/dreamweaver/articles/html5-forms-pt2.html -->
+
+			<p><em>Fields marked with an * are required</em></p><br />
+ 
+			<form name="contact_form" action="mailto:generalinformation@pc.org" method="post" enctype="plain/text">
+
+				<label for="fname">First Name:*</label>
+				<input type="text" name="fname" id="fname" required />
+				<br /><br />
+	
+				<label for="lname">Last Name:*</label>
+				<input type="text" name="lname" id="lname" required />
+				<br /><br />
+		
+				<label for="email">Email Address:*</label>
+				<input type="email" name="email" required placeholder="Enter a valid email address">
+				<br /><br />
+
+				<label for="zip">Zip Code:</label>
+    			<input type="text" name="zip" id="zip" placeholder="5 digits" pattern="\d{5}" title="The zip code should consist of five numbers only">
+    			<br /><br />
+
+    			<label for="Reasons">How do you hope to get involved?:</label><br />
+				<textarea name="Reasons" id="Reason" rows="7" cols="40" />
+				</textarea>
+				<br /><br />
+	
+				<label for="comment">Additional Comments:</label><br />
+				<textarea name="comment" id="comment" rows="7" cols="40" />
+				</textarea>
+				<br /><br />
+
+				<input type="checkbox" name="Newsletter" value="Wants the newsletter">I would like to be subscribed to the Phipps newsletter<br /><br />
+
+	
+				<input type="submit" value="Submit" />
+				
+			</form>
+
+			
+
+
+			
+	</div>
+
+	<div id="box">
+		<h5>Upcoming Exhibitions</h5>
+		<div id="accordion">
+  			<section id="item1">
+    			<p class="pointer">&#9654;</p><h1><a href="http://phipps.conservatory.org/exhibits-and-events/featured-event.aspx?eventid=60">Fall Flower Show and Garden Railroad</a></h1>
+    			<p class="date">October 18 - November 9, 2014</p>
+    			<p>In celebration of the harvest season and its changing hues, this colorful exhibit showcases beautiful crysanthemums, vibrant foliage and other festive flowers as tiny trains wind their way through many of the Conservatory's display rooms.</p>
+    			<img class = "flowers" src="images/fall14.jpg" alt="flowers" />
+  			</section>
+  			<section id="item2" class="ac_hidden">
+    			<p class="pointer">&#9654;</p><h1><a href="http://phipps.conservatory.org/exhibits-and-events/featured-event.aspx?eventid=1097">Wines Under Glass</a></h1>
+    			<p class="date">October 30, 2014</p>
+    			<p>Join masked revelers and friends for an unforgettable masquerade party as we raise a glass to toast another year of groundbreaking achievements. As our guest, you will enjoy the company of good friends, delectable food, captivating entertainment, and the beauty of our Fall Flower Show and Tropical Forest India exhibits. Be a part of the celebration!</p>
+    			<img class = "flowers" src="images/wine.jpg" alt="wine" />
+  			</section>
+  			<section id="item3" class="ac_hidden">
+    			<p class="pointer">&#9654;</p><h1><a href="http://www.engineering.pitt.edu/MCSI/conference/">Engineering Sustainability 2015 Conference</a></h1>
+    			<p class="date">April 19 - 21, 2015</p>
+    			<p>This conference, presented by Mascaro Center for Sustainable Innovation at the University of Pittsburgh and the Steinbrenner Institute for Environmental Education and Research at Carnegie Mellon University, will bring together members of academia, government, industry, and nonprofits to share sustainability research and practices</p>
+    			<img class = "flowers" src = "images/es15.jpg" alt="green" />
+  			</section>
+		</div>
+
+
+	</div>
+
+	<footer>
+		<p>Created by Eric Yu, 67-250 Information Systems Milieux, Carnegie Mellon University, October 2014</p>
+
+		<div class="icons">
+
+			<li><a href="https://www.facebook.com/phippsconservatory"><img class = "icon" src="images/facebook.png" alt="Facebook Logo" /></a></li>
+			<li><a href="https://twitter.com/PhippsNews"><img class = "icon" src="images/Twitter-icon.png" alt="Twitter Logo" /></a></li>
+			<li><a href="https://www.youtube.com/user/phippsconservatory"><img class = "icon" src="images/youtube.png" alt="Youtube Logo" /></a></li>
+			<li><a href="https://www.flickr.com/photos/phippsconservatory/"><img class = "icon" src="images/flickr.png" alt="Flickr Logo" /></a></li>
+			<li><a href="http://www.pinterest.com/phippsisgreen/"><img class = "icon" src="images/pinterest-icon.png" alt="Pinterest Logo" /></a></li>
+
+
+		</div>
+
+	</footer>
+
+</div>
+
+
+
+</body>
+
+</html>
